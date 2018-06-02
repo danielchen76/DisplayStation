@@ -1,0 +1,13 @@
+{
+  "name": "displaystation",
+  "version": "1.0.0",
+  "description": "Display Station for Daniel's home.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Chen",
+  "license": "ISC",
+  "devDependencies": {}
+}
