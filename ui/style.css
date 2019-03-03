@@ -1,7 +1,17 @@
-/* @import url(https://fonts.googleapis.com/css?family=Orbitron:700); */
+
+@font-face {
+    font-family: 'Enhanced LED Board-7';
+	src: url('font/enhanced_led_board-7.ttf');
+}
+
+@font-face {
+	font-family: 'PT Mono';
+	src: uar('font/PTM75F.ttf');
+}
 
 html, body {
-    font-family: 'PT Mono Bold', sans-serif;
+	/*font-family: 'PT Mono', sans-serif;*/
+	font-family: 'PT Mono';
     background: rgb(0, 0, 0);
 }
 
@@ -10,8 +20,88 @@ html, body {
     /* top: 50%; */
     /* left: 0%; */
     transform: translate(0%, 40%);
-    font-size: 300px;
+    font-size: 400px;
     text-align: center;
     color: #D7ECFF;
-    text-shadow: 0 0 2px #fff, 0 0 6px #fff, 0 0 10px #fff, 0 0 15px #228DFF, 0 0 25px #228DFF, 0 0 30px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF;
+    /* text-shadow: 0 0 2px #fff, 0 0 6px #fff, 0 0 10px #fff, 0 0 15px #228DFF, 0 0 25px #228DFF, 0 0 30px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF; */
+}
+
+.hour {
+    position: fixed;
+    top: 100px;
+    left: 1078px;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    border: 1px solid;
+    border-color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.ampm {
+	position: fixed;
+	top: 150px;
+	left:899px;
+	color: rgb(255, 255, 255);
+	font-size: 60px;
+}
+
+.tempfont {
+	font-family: 'Enhanced LED Board-7';
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.tempdecimalfont {
+	font-family: 'Enhanced LED Board-7';
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.humfont {
+	font-family: 'Enhanced LED Board-7';
+	font-size: 30px;
+}
+
+.humdecimalfont {
+	font-family: 'Enhanced LED Board-7';
+	font-size: 25px;
+}
+
+.outsidedata {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	color: white;
+	width: 180px;
+	height: 150px;
+	text-align: right;
+	/* border: 1px solid;
+	border-color: white; */
+}
+
+.insidedata {
+	position: relative;
+	top: 20px;
+	left: 200px;
+	color: white;
+	width: 180px;
+	height: 150px;
+	text-align: right;
+	/* border: 1px solid;
+	border-color: white; */
+}
+
+.temperature {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	color: rgb(255, 255, 255);
+	font-size: 100;
+	background-image: url('pic/652050_house_512x512.png');
+	background-size: 70%;
+	background-position: bottom 0px right 0px;
+	background-repeat: no-repeat;
+	width: 450px;
+	height: 350px;
 }

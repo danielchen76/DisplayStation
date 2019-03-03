@@ -9,10 +9,12 @@ function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
                         width: 1920, 
-                        height: 1080,
+						height: 1080,
+						maxWidth: 1920,
+						maxHeight: 1080,
                         frame: false,
                         resizable: false
-                      })
+					  })
 
   // and load the index.html of the app.
   mainWindow.loadFile('ui/index.html')
@@ -53,3 +55,4 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+let miSensor = require('./sensors/misensors');

@@ -9,5 +9,8 @@
   },
   "author": "Daniel Chen",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "suncalc2": "^1.8.1"
+  }
 }
